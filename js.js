@@ -1,7 +1,7 @@
 let pergunta = prompt("Faça sua pergunta")
 
 
-const palavras = ["Com certeza", "Não conte com isso", "O futuro é incerto"]
+const palavras = ["Com certeza", "Não conte com isso", "O futuro é incerto", "Minhas fontes dizem que não", "Pelo que vejo, sim."]
 
 function sortear() {
     const indiceAleatorio = Math.floor(Math.random() * palavras.length);

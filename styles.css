@@ -1,22 +1,51 @@
-*{
-padding: 0px;
-margin: 0px;
-box-sizing: border-box;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
     color: rgba(240, 248, 255, 0.384);
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
-.cabe{
+.cabe {
     text-align: center;
 }
 
-.foto{
-margin: 20px;
-width: 450px;
-height: 550px;
+.foto {
+    margin: 5px;
+    width: 450px;
+    height: 550px;
 }
 
+/* Dispositivos pequenos (tablets, 768px e superiores) */
+@media (min-width: @screen-sm-min) { 
+        #container {
+        background-color: red;
+        margin: 2% 0 2% 0;
+       }
+     }
+
+/* Dispositivos médios (desktops, 992px e superiores) */
+@media (min-width: @screen-md-min) { 
+ #container {
+    background-color: silver;
+    margin: 2% 12% 2% 12%;
+    padding: 2% 5% 2% 5%;
+    color: #252525;
+ } 
+}
+
+/* Dispositivos grandes (desktops grandes, 1200px e superiores) */
+@media (min-width: @screen-lg-min) { 
+ #container {
+    background-color: silver;
+    margin: 2% 12% 2% 12%;
+    padding: 2% 5% 2% 5%;
+    color: #252525;
+  }
+ }
