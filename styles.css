@@ -16,34 +16,66 @@ body {
     text-align: center;
 }
 
-.foto {
+.particula {
+    position: fixed; 
+    bottom: -10px; 
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    
+    box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8), 0 0 20px rgba(0, 191, 255, 0.5);
+    
+    animation: subir linear forwards;
+    opacity: 0; 
+    z-index: 10;
+}
+
+@keyframes subir {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1; 
+    }
+    100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0; 
+    }
+}
+.bola-cristal {
     margin: 5px;
     width: 400px;
     height: 500px;
-    animation: pulsarLuz 4s ease-in-out infinite;
+animation: flutuar 4s ease-in-out infinite, pulsarBrilho 3s ease-in-out infinite alternate;
+
+border-radius: 50%; 
+    transition: transform 0.3s ease;
 }
 
-@keyframes pulsarLuz {
-    0% {
-        box-shadow: 0 4px 15px rgba(61, 114, 114, 0.2);
+.bola-cristal:active, .bola-cristal:hover {
+    transform: scale(1.05); 
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
     }
     50% {
-        box-shadow: 0 10px 30px rgba(61, 114, 114, 0.9);
-    }
-    100% {
-        box-shadow: 0 4px 15px rgba(61, 114, 114, 0.2);
+        transform: translateY(-8px); 
     }
 }
 
-@keyframes pulsarIcone {
+@keyframes pulsarBrilho {
     0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.18);
+        
+        box-shadow: 0 0 15px rgba(100, 150, 255, 0.3), inset 0 0 10px rgba(100, 150, 255, 0.2);
+        filter: drop-shadow(0 0 5px rgba(138, 43, 226, 0.4));
     }
     100% {
-        transform: scale(1);
+       
+        box-shadow: 0 0 35px rgba(147, 112, 219, 0.6), 0 0 60px rgba(0, 191, 255, 0.4);
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5));
     }
 }
 

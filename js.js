@@ -9,3 +9,25 @@ function sortear() {
 
     document.getElementById("resultado").innerText = palavraSorteada;
 }
+
+function criarParticula() {
+    const particula = document.createElement('div');
+    particula.classList.add('particula');
+
+    particula.style.left = Math.random() * 100 + 'vw';
+
+    const duracao = Math.random() * 3 + 3;
+    particula.style.animationDuration = duracao + 's';
+
+    
+    const tamanho = Math.random() * 3 + 2;
+    particula.style.width = tamanho + 'px';
+    particula.style.height = tamanho + 'px';
+
+    document.body.appendChild(particula);
+
+    setTimeout(() => {
+        particula.remove();
+    }, duracao * 1000); 
+}
+setInterval(criarParticula, 300);
