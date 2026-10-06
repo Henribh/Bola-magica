@@ -22,6 +22,12 @@ body {
     height: 550px;
 }
 
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 15px;
+    }
+}
 /* Dispositivos pequenos (tablets, 768px e superiores) */
 @media (min-width: @screen-sm-min) { 
         #container {
