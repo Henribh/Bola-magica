@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="stylesheet" href="styles.css">
-
     <title>Veja seu futuro</title>
 </head>
-
 <body>
-
-    <div class="cabe">
-        <H1>Faça sua pergunta</H1>
-
-        <P>O ontem já foi, o agora é uma dádiva, mas o futuro você realmente quer ser saber? </P>
+    <main class="cabe">
+        <h1>Faça sua pergunta para bruxa</h1>
+        <p>O ontem já foi, o agora é uma dádiva, mas o futuro você realmente quer saber?</p>
         <br>
         <p>Pergunte com responsabilidade...</p>
         <br>
-        <img class="bola-cristal" src="assets/pexels-mariah-bushek-774911860-18911837.jpg" alt="bola de cristão">
-        <h2 id="resultado">Veja a sua resposta</h2>
-        <button onclick="sortear()">Clique aqui</button>
+        
+        <img class="bola-cristal" src="assets/pexels-mariah-bushek-774911860-18911837.jpg" alt="Bola de Cristal">
+        
+        <input type="text" id="perguntaInput" placeholder="Digite sua pergunta aqui...">
+        
+        <button onclick="sortear()">Ver o Futuro</button>
+        
+        <h2 id="resultado">Sua resposta aparecerá aqui...</h2>
+    </main>
 
-    </div>
-
+    <script src="js.js"></script>
 </body>
-<script src="js.js"></script>
 </html>
