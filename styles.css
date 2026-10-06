@@ -3,6 +3,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden; /* Esconde qualquer elemento que vazar para os lados */
+}
 
 body {
     background-color: black;
@@ -10,6 +13,12 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     max-width: 100vw;
     overflow-x: hidden;
+    /* Mantenha as regras que você já tinha: */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
+    margin: 0;
+    position: relative; /* Ajuda a conter os elementos absolutos/fixos */
 }
 
 .cabe {

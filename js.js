@@ -14,7 +14,7 @@ function criarParticula() {
     const particula = document.createElement('div');
     particula.classList.add('particula');
 
-    particula.style.left = Math.random() * 100 + 'vw';
+    particula.style.left = Math.random() * 95 + 'vw';
 
     const duracao = Math.random() * 3 + 3;
     particula.style.animationDuration = duracao + 's';
