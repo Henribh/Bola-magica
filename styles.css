@@ -28,30 +28,3 @@ body {
         padding: 0 15px;
     }
 }
-/* Dispositivos pequenos (tablets, 768px e superiores) */
-@media (min-width: @screen-sm-min) { 
-        #container {
-        background-color: red;
-        margin: 2% 0 2% 0;
-       }
-     }
-
-/* Dispositivos médios (desktops, 992px e superiores) */
-@media (min-width: @screen-md-min) { 
- #container {
-    background-color: silver;
-    margin: 2% 12% 2% 12%;
-    padding: 2% 5% 2% 5%;
-    color: #252525;
- } 
-}
-
-/* Dispositivos grandes (desktops grandes, 1200px e superiores) */
-@media (min-width: @screen-lg-min) { 
- #container {
-    background-color: silver;
-    margin: 2% 12% 2% 12%;
-    padding: 2% 5% 2% 5%;
-    color: #252525;
-  }
- }
